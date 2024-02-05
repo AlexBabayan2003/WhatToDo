@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/toDoFragment">
+
+    <fragment
+        android:id="@+id/toDoFragment"
+        android:name="com.example.whattodo.ui.todofragment.ToDoFragment"
+        android:label="ToDoFragment"
+        tools:layout="@layout/to_do_fragment">
+        <action
+            android:id="@+id/action_toDoFragment_to_favoriteToDoFragment"
+            app:destination="@id/favoriteToDoFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteToDoFragment"
+        android:name="com.example.whattodo.ui.favoritetodofragment.FavoriteToDoFragment"
+        android:label="FavoriteToDoFragment">
+        <action
+            android:id="@+id/action_favoriteToDoFragment_to_toDoFragment"
+            app:destination="@id/toDoFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_enter_anim" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WhatToDo</string>
+    <string name="type_of_the_activity">Type of the activity</string>
+    <string name="the_cost_of_the_event">the cost of the event</string>
+    <string name="the_number_of_people_that_your_activity_could_involve">The number of people that your activity could involve</string>
+    <string name="add_notification">activity added to wishlist</string>
+    <string name="remove_notification">activity removed from wishlist</string>
+</resources>
